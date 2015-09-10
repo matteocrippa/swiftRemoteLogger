@@ -1,0 +1,6 @@
+framework module swiftRemoteLogger {
+  umbrella header "swiftRemoteLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

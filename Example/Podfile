@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'swiftRemoteLogger_Example', :exclusive => true do
+  pod "swiftRemoteLogger", :path => "../"
+end
+
+target 'swiftRemoteLogger_Tests', :exclusive => true do
+  pod "swiftRemoteLogger", :path => "../"
+
+  
+end

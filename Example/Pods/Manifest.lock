@@ -1,0 +1,14 @@
+PODS:
+  - swiftRemoteLogger (0.1.0)
+
+DEPENDENCIES:
+  - swiftRemoteLogger (from `../`)
+
+EXTERNAL SOURCES:
+  swiftRemoteLogger:
+    :path: ../
+
+SPEC CHECKSUMS:
+  swiftRemoteLogger: 0361bd3e8dd40e06b2fadc1eff828c531d5f0402
+
+COCOAPODS: 0.39.0.beta.3

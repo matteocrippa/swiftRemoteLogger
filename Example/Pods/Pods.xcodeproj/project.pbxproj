@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1185686B4339FEB9E45296E89578B559 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4434840947E0ECC340C3E53A520310 /* Foundation.framework */; };
+		1CB0CE79EB0217567DF327934BA31C75 /* Pods-swiftRemoteLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA57EB4C054DF767B73E4A17CBECE94 /* Pods-swiftRemoteLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EF0B7373607D07A196155E068914646 /* swiftRemoteLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23AD79E5C1BD09864A2A6AE2A07A17 /* swiftRemoteLogger.swift */; };
+		77CC3CD94342E05085467AEC95041E6F /* Pods-swiftRemoteLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98993F11C8B212FA5693D9597321AC57 /* Pods-swiftRemoteLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D273E5E0B5977094830D4CEF1C0A5A4 /* swiftRemoteLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD9A78FCAD2600E53A0E61D4B1C641 /* swiftRemoteLogger-dummy.m */; };
+		9684DEEE5278CBD119F1F8FDFE62B370 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4434840947E0ECC340C3E53A520310 /* Foundation.framework */; };
+		B2BB392150E923DAD29EBD82C64701EC /* Pods-swiftRemoteLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AA75E7141CE57793F921AB60D973 /* Pods-swiftRemoteLogger_Example-dummy.m */; };
+		BC494C425C0F75B53CE6987D25F71284 /* swiftRemoteLogger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 058658F49A27025315FE0354591C7D5D /* swiftRemoteLogger.bundle */; };
+		C566B341B1A5593B898E634479AE57EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4434840947E0ECC340C3E53A520310 /* Foundation.framework */; };
+		C64CAAB521ECA80211C3C6F3EDDE9B2B /* swiftRemoteLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA8E2A3861DE5F9C614C225B915E3DC /* swiftRemoteLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A47A26950C3D49E9192F4EAA60B1DC /* Pods-swiftRemoteLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94119DBB8797FAFC1E13DC988CEF288F /* Pods-swiftRemoteLogger_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		672345138D2EBEC864A8989916C47B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DA5183DB53D631C345EFA8C6E12461E;
+			remoteInfo = "swiftRemoteLogger-swiftRemoteLogger";
+		};
+		A673EEAAEC8C970E897A23D684CFB486 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D71194715C9DE755AE47A370CD10365E;
+			remoteInfo = swiftRemoteLogger;
+		};
+		BE8EB4D2E4886DB271E65B7775BE498C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D71194715C9DE755AE47A370CD10365E;
+			remoteInfo = swiftRemoteLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058658F49A27025315FE0354591C7D5D /* swiftRemoteLogger.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftRemoteLogger.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4434840947E0ECC340C3E53A520310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1C3BE633F5074D9ED5CCAB9B145206A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20940303349B989EECEF2A63396E4CDB /* Pods_swiftRemoteLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftRemoteLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24619D7D4AE4CC4256325E41982A78F9 /* Pods-swiftRemoteLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-swiftRemoteLogger_Example.modulemap"; sourceTree = "<group>"; };
+		2B23AD79E5C1BD09864A2A6AE2A07A17 /* swiftRemoteLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = swiftRemoteLogger.swift; sourceTree = "<group>"; };
+		2F034669E818879CAF4FB070E3E7A6EA /* Pods-swiftRemoteLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-swiftRemoteLogger_Tests.modulemap"; sourceTree = "<group>"; };
+		345EBBF8608F7A7E2B63B90D10DC5CEE /* Pods-swiftRemoteLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftRemoteLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA8E2A3861DE5F9C614C225B915E3DC /* swiftRemoteLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftRemoteLogger-umbrella.h"; sourceTree = "<group>"; };
+		5E43A1DE90EB4B6AD9DEDB940D55C148 /* swiftRemoteLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = swiftRemoteLogger.modulemap; sourceTree = "<group>"; };
+		6F58E8126FABFBCA3D534DC5658D6411 /* swiftRemoteLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftRemoteLogger-prefix.pch"; sourceTree = "<group>"; };
+		738FA8A1615FFC37ABADADFBF29E6FD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AD9A78FCAD2600E53A0E61D4B1C641 /* swiftRemoteLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swiftRemoteLogger-dummy.m"; sourceTree = "<group>"; };
+		77A763D7001D14DB10D1F7EEAD06C522 /* Pods-swiftRemoteLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftRemoteLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		89F0747758B1F4CBA0ED083CE51DD0AD /* Pods-swiftRemoteLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftRemoteLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EFDEE91B0FC8C180A7C1C7B80535528 /* Pods-swiftRemoteLogger_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftRemoteLogger_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		94119DBB8797FAFC1E13DC988CEF288F /* Pods-swiftRemoteLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftRemoteLogger_Tests-dummy.m"; sourceTree = "<group>"; };
+		98993F11C8B212FA5693D9597321AC57 /* Pods-swiftRemoteLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftRemoteLogger_Example-umbrella.h"; sourceTree = "<group>"; };
+		B4C87FBE3C573C59036589EA9C40E006 /* Pods-swiftRemoteLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftRemoteLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C68199F9249476F4A8651CD5D7611EEE /* Pods-swiftRemoteLogger_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftRemoteLogger_Tests-resources.sh"; sourceTree = "<group>"; };
+		CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = swiftRemoteLogger.xcconfig; sourceTree = "<group>"; };
+		CC32FBF58C8A2D240FFD387A440E111D /* Pods-swiftRemoteLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftRemoteLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D3BF82575D05F64D1622410DFC3F1E70 /* swiftRemoteLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swiftRemoteLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA93AA75E7141CE57793F921AB60D973 /* Pods-swiftRemoteLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftRemoteLogger_Example-dummy.m"; sourceTree = "<group>"; };
+		DCAC53B1F34E1D6D1F8DB5B391D8756D /* Pods-swiftRemoteLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftRemoteLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E1FDC45AFF3424B69B02955D64C8BC71 /* Pods-swiftRemoteLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftRemoteLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E93CB2AB87ABD5BDC96A933B21BBF298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EEE938073AE7678FD62795C9BFF8E9 /* Pods_swiftRemoteLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftRemoteLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9C87439F2A6958CADC80D3A05573D1 /* Pods-swiftRemoteLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftRemoteLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FAE8C421437124B349167D3269763A53 /* Pods-swiftRemoteLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftRemoteLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB7A788FF47B5D421D5ED6DA0BAD6369 /* Pods-swiftRemoteLogger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftRemoteLogger_Example-resources.sh"; sourceTree = "<group>"; };
+		FDA57EB4C054DF767B73E4A17CBECE94 /* Pods-swiftRemoteLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftRemoteLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47B3A69D8CED71654C351A757C01C157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C566B341B1A5593B898E634479AE57EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACDF3A44CA1F1104FC182F2CEFD46B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826A68617E3294F5FB849C7CE6844CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9684DEEE5278CBD119F1F8FDFE62B370 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C486D4842BF5406F7D8DA84F16923879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1185686B4339FEB9E45296E89578B559 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1035FFB30253B8456E3C7262B856C3CC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6A24FA03084CED577B9BE1926D872854 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1B4434840947E0ECC340C3E53A520310 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5CC86C997A48ECC92D49BAE07269573B /* swiftRemoteLogger */ = {
+			isa = PBXGroup;
+			children = (
+				1035FFB30253B8456E3C7262B856C3CC /* Pod */,
+				8C0A6B621FC4814FF0B3000BE84E7B19 /* Support Files */,
+			);
+			name = swiftRemoteLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6A24FA03084CED577B9BE1926D872854 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2B23AD79E5C1BD09864A2A6AE2A07A17 /* swiftRemoteLogger.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				B73F083584E2A824854FA4635BE3DC20 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				DA9782091DECEC735AECF953FC354973 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C0A6B621FC4814FF0B3000BE84E7B19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				738FA8A1615FFC37ABADADFBF29E6FD2 /* Info.plist */,
+				5E43A1DE90EB4B6AD9DEDB940D55C148 /* swiftRemoteLogger.modulemap */,
+				CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */,
+				74AD9A78FCAD2600E53A0E61D4B1C641 /* swiftRemoteLogger-dummy.m */,
+				6F58E8126FABFBCA3D534DC5658D6411 /* swiftRemoteLogger-prefix.pch */,
+				4BA8E2A3861DE5F9C614C225B915E3DC /* swiftRemoteLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/swiftRemoteLogger";
+			sourceTree = "<group>";
+		};
+		B73F083584E2A824854FA4635BE3DC20 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CC86C997A48ECC92D49BAE07269573B /* swiftRemoteLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C918493C1365D2C0DBFC7C88ED844118 /* Pods-swiftRemoteLogger_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E93CB2AB87ABD5BDC96A933B21BBF298 /* Info.plist */,
+				2F034669E818879CAF4FB070E3E7A6EA /* Pods-swiftRemoteLogger_Tests.modulemap */,
+				B4C87FBE3C573C59036589EA9C40E006 /* Pods-swiftRemoteLogger_Tests-acknowledgements.markdown */,
+				89F0747758B1F4CBA0ED083CE51DD0AD /* Pods-swiftRemoteLogger_Tests-acknowledgements.plist */,
+				94119DBB8797FAFC1E13DC988CEF288F /* Pods-swiftRemoteLogger_Tests-dummy.m */,
+				8EFDEE91B0FC8C180A7C1C7B80535528 /* Pods-swiftRemoteLogger_Tests-frameworks.sh */,
+				C68199F9249476F4A8651CD5D7611EEE /* Pods-swiftRemoteLogger_Tests-resources.sh */,
+				FDA57EB4C054DF767B73E4A17CBECE94 /* Pods-swiftRemoteLogger_Tests-umbrella.h */,
+				77A763D7001D14DB10D1F7EEAD06C522 /* Pods-swiftRemoteLogger_Tests.debug.xcconfig */,
+				DCAC53B1F34E1D6D1F8DB5B391D8756D /* Pods-swiftRemoteLogger_Tests.release.xcconfig */,
+			);
+			name = "Pods-swiftRemoteLogger_Tests";
+			path = "Target Support Files/Pods-swiftRemoteLogger_Tests";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9EEE938073AE7678FD62795C9BFF8E9 /* Pods_swiftRemoteLogger_Example.framework */,
+				20940303349B989EECEF2A63396E4CDB /* Pods_swiftRemoteLogger_Tests.framework */,
+				058658F49A27025315FE0354591C7D5D /* swiftRemoteLogger.bundle */,
+				D3BF82575D05F64D1622410DFC3F1E70 /* swiftRemoteLogger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9782091DECEC735AECF953FC354973 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F074F3994A6006145C3BCB9CBA830C36 /* Pods-swiftRemoteLogger_Example */,
+				C918493C1365D2C0DBFC7C88ED844118 /* Pods-swiftRemoteLogger_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F074F3994A6006145C3BCB9CBA830C36 /* Pods-swiftRemoteLogger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1C3BE633F5074D9ED5CCAB9B145206A6 /* Info.plist */,
+				24619D7D4AE4CC4256325E41982A78F9 /* Pods-swiftRemoteLogger_Example.modulemap */,
+				E1FDC45AFF3424B69B02955D64C8BC71 /* Pods-swiftRemoteLogger_Example-acknowledgements.markdown */,
+				FAE8C421437124B349167D3269763A53 /* Pods-swiftRemoteLogger_Example-acknowledgements.plist */,
+				DA93AA75E7141CE57793F921AB60D973 /* Pods-swiftRemoteLogger_Example-dummy.m */,
+				EE9C87439F2A6958CADC80D3A05573D1 /* Pods-swiftRemoteLogger_Example-frameworks.sh */,
+				FB7A788FF47B5D421D5ED6DA0BAD6369 /* Pods-swiftRemoteLogger_Example-resources.sh */,
+				98993F11C8B212FA5693D9597321AC57 /* Pods-swiftRemoteLogger_Example-umbrella.h */,
+				345EBBF8608F7A7E2B63B90D10DC5CEE /* Pods-swiftRemoteLogger_Example.debug.xcconfig */,
+				CC32FBF58C8A2D240FFD387A440E111D /* Pods-swiftRemoteLogger_Example.release.xcconfig */,
+			);
+			name = "Pods-swiftRemoteLogger_Example";
+			path = "Target Support Files/Pods-swiftRemoteLogger_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F362A9ACCB01E70F7951AEEA5E90A8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64CAAB521ECA80211C3C6F3EDDE9B2B /* swiftRemoteLogger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831DC1D80D43FBD5C2BCDEF858173103 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB0CE79EB0217567DF327934BA31C75 /* Pods-swiftRemoteLogger_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E589B233ECDE3C741E42157085998F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CC3CD94342E05085467AEC95041E6F /* Pods-swiftRemoteLogger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04DDFDE5B5C18FCFC47CA8ABDBA3ED69 /* Pods-swiftRemoteLogger_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E63D6075BFCDF30449183B56641B04 /* Build configuration list for PBXNativeTarget "Pods-swiftRemoteLogger_Tests" */;
+			buildPhases = (
+				0F54C9F45CABF8F6F07EEA6834C1D59F /* Sources */,
+				826A68617E3294F5FB849C7CE6844CAF /* Frameworks */,
+				831DC1D80D43FBD5C2BCDEF858173103 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69ECB890950B0338970CD54AF8CF08B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-swiftRemoteLogger_Tests";
+			productName = "Pods-swiftRemoteLogger_Tests";
+			productReference = 20940303349B989EECEF2A63396E4CDB /* Pods_swiftRemoteLogger_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3DA5183DB53D631C345EFA8C6E12461E /* swiftRemoteLogger-swiftRemoteLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A614545BC4F390BFAA13371F626B955 /* Build configuration list for PBXNativeTarget "swiftRemoteLogger-swiftRemoteLogger" */;
+			buildPhases = (
+				2546B304BE78AA1A3283CFBF19431378 /* Sources */,
+				7ACDF3A44CA1F1104FC182F2CEFD46B3 /* Frameworks */,
+				8F9EEE28C0DA68B1282E9EF7E05B952F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swiftRemoteLogger-swiftRemoteLogger";
+			productName = "swiftRemoteLogger-swiftRemoteLogger";
+			productReference = 058658F49A27025315FE0354591C7D5D /* swiftRemoteLogger.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		99B08C410B62B38D23C9B0D1AD4D234C /* Pods-swiftRemoteLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0AF8534D221721F59266D2F7E12DC2 /* Build configuration list for PBXNativeTarget "Pods-swiftRemoteLogger_Example" */;
+			buildPhases = (
+				525A533ED7B983D6B7E3B19784FCA09A /* Sources */,
+				47B3A69D8CED71654C351A757C01C157 /* Frameworks */,
+				D2E589B233ECDE3C741E42157085998F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BBA0D167E90E2EA3571D4482CA38E6F /* PBXTargetDependency */,
+			);
+			name = "Pods-swiftRemoteLogger_Example";
+			productName = "Pods-swiftRemoteLogger_Example";
+			productReference = E9EEE938073AE7678FD62795C9BFF8E9 /* Pods_swiftRemoteLogger_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D71194715C9DE755AE47A370CD10365E /* swiftRemoteLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6CE6435C049ADF2EC5DE18F6DD6FF93 /* Build configuration list for PBXNativeTarget "swiftRemoteLogger" */;
+			buildPhases = (
+				530B11C73FF15884B70A9D7C604BA065 /* Sources */,
+				C486D4842BF5406F7D8DA84F16923879 /* Frameworks */,
+				FE383075BD3D3835BFD007FA04C0D8EF /* Resources */,
+				5F362A9ACCB01E70F7951AEEA5E90A8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE66576CDA6568EED2294324579A0C63 /* PBXTargetDependency */,
+			);
+			name = swiftRemoteLogger;
+			productName = swiftRemoteLogger;
+			productReference = D3BF82575D05F64D1622410DFC3F1E70 /* swiftRemoteLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99B08C410B62B38D23C9B0D1AD4D234C /* Pods-swiftRemoteLogger_Example */,
+				04DDFDE5B5C18FCFC47CA8ABDBA3ED69 /* Pods-swiftRemoteLogger_Tests */,
+				D71194715C9DE755AE47A370CD10365E /* swiftRemoteLogger */,
+				3DA5183DB53D631C345EFA8C6E12461E /* swiftRemoteLogger-swiftRemoteLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F9EEE28C0DA68B1282E9EF7E05B952F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE383075BD3D3835BFD007FA04C0D8EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC494C425C0F75B53CE6987D25F71284 /* swiftRemoteLogger.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F54C9F45CABF8F6F07EEA6834C1D59F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A47A26950C3D49E9192F4EAA60B1DC /* Pods-swiftRemoteLogger_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2546B304BE78AA1A3283CFBF19431378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525A533ED7B983D6B7E3B19784FCA09A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2BB392150E923DAD29EBD82C64701EC /* Pods-swiftRemoteLogger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530B11C73FF15884B70A9D7C604BA065 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF0B7373607D07A196155E068914646 /* swiftRemoteLogger.swift in Sources */,
+				7D273E5E0B5977094830D4CEF1C0A5A4 /* swiftRemoteLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69ECB890950B0338970CD54AF8CF08B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = swiftRemoteLogger;
+			target = D71194715C9DE755AE47A370CD10365E /* swiftRemoteLogger */;
+			targetProxy = BE8EB4D2E4886DB271E65B7775BE498C /* PBXContainerItemProxy */;
+		};
+		8BBA0D167E90E2EA3571D4482CA38E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = swiftRemoteLogger;
+			target = D71194715C9DE755AE47A370CD10365E /* swiftRemoteLogger */;
+			targetProxy = A673EEAAEC8C970E897A23D684CFB486 /* PBXContainerItemProxy */;
+		};
+		CE66576CDA6568EED2294324579A0C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "swiftRemoteLogger-swiftRemoteLogger";
+			target = 3DA5183DB53D631C345EFA8C6E12461E /* swiftRemoteLogger-swiftRemoteLogger */;
+			targetProxy = 672345138D2EBEC864A8989916C47B9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0221C3348DA3F4E65CD1997CFE1CB5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = swiftRemoteLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F196C5B311235937684A4F4DA42DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = swiftRemoteLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3E2C09110ED31C61DDBE5C46D26FE68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A763D7001D14DB10D1F7EEAD06C522 /* Pods-swiftRemoteLogger_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftRemoteLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftRemoteLogger_Tests/Pods-swiftRemoteLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_swiftRemoteLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4ADB142E966C801090740A08AF2D7AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/swiftRemoteLogger/swiftRemoteLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftRemoteLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swiftRemoteLogger/swiftRemoteLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = swiftRemoteLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7E24E0B6873625EB7A377989DC42C4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345EBBF8608F7A7E2B63B90D10DC5CEE /* Pods-swiftRemoteLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftRemoteLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftRemoteLogger_Example/Pods-swiftRemoteLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_swiftRemoteLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6E6A1DCF38C7D6AA0AAEA1EC34F4CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC32FBF58C8A2D240FFD387A440E111D /* Pods-swiftRemoteLogger_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftRemoteLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftRemoteLogger_Example/Pods-swiftRemoteLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_swiftRemoteLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8DB4B4C3B7B8C52CBA30EC473FA2B99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAC53B1F34E1D6D1F8DB5B391D8756D /* Pods-swiftRemoteLogger_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftRemoteLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftRemoteLogger_Tests/Pods-swiftRemoteLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_swiftRemoteLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9FD71E26D4B3E7971F7F47FFBC877F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2FD0FCBBDBC16BA553F4D581C3AB08 /* swiftRemoteLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/swiftRemoteLogger/swiftRemoteLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftRemoteLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swiftRemoteLogger/swiftRemoteLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = swiftRemoteLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E63D6075BFCDF30449183B56641B04 /* Build configuration list for PBXNativeTarget "Pods-swiftRemoteLogger_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2C09110ED31C61DDBE5C46D26FE68F /* Debug */,
+				E8DB4B4C3B7B8C52CBA30EC473FA2B99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A614545BC4F390BFAA13371F626B955 /* Build configuration list for PBXNativeTarget "swiftRemoteLogger-swiftRemoteLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0221C3348DA3F4E65CD1997CFE1CB5C5 /* Debug */,
+				32F196C5B311235937684A4F4DA42DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CE6435C049ADF2EC5DE18F6DD6FF93 /* Build configuration list for PBXNativeTarget "swiftRemoteLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FD71E26D4B3E7971F7F47FFBC877F5 /* Debug */,
+				4ADB142E966C801090740A08AF2D7AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0AF8534D221721F59266D2F7E12DC2 /* Build configuration list for PBXNativeTarget "Pods-swiftRemoteLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E24E0B6873625EB7A377989DC42C4FF /* Debug */,
+				B6E6A1DCF38C7D6AA0AAEA1EC34F4CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
