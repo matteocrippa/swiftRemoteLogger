@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         swiftRemoteLogger.endPoint = "http://localhost/logger.php"
         
-        swiftRemoteLogger.log("test")
+        swiftRemoteLogger.l("test")
 
         
         // Override point for customization after application launch.

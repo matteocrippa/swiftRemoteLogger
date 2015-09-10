@@ -12,10 +12,10 @@ import Alamofire
 public class swiftRemoteLogger {
     
     // app endpoint
-    public var endPoint = ""
+    public static var endPoint = ""
     
     // log feature
-    public class func log<T>(object: T, filename: String = __FILE__, line: Int = __LINE__, funcname: String = __FUNCTION__) {
+    public class func l<T>(object: T, filename: String = __FILE__, line: Int = __LINE__, funcname: String = __FUNCTION__) {
         
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy HH:mm:ss:SSS"
@@ -28,14 +28,14 @@ public class swiftRemoteLogger {
             NSException(name: "swiftRemoteLogger", reason: "Endpoint not set", userInfo: nil).raise()
         }
         
-        Alamofire.request(.POST, swiftRemoteLogger_endPoint, parameters:
+        Alamofire.request(.POST, endPoint, parameters:
             [
                 "data": log,
                 "udid": UIDevice.currentDevice().identifierForVendor.UUIDString,
                 "app": "\(NSBundle.mainBundle().bundleIdentifier!)",
                 "password": "password"
             ]).responseJSON { _, _, JSON, _ in
-                println(JSON)
+                //println(JSON)
         }
         
     }
