@@ -11,11 +11,6 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A simple remote logger for swift, via php script"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                         A php based remote logger system, download the dedicated php script in order to remote log every information about your app during debug sessions.
                        DESC
@@ -24,17 +19,12 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Matteo Crippa" => "github@matteocrippa.it" }
   s.source           = { :git => "https://github.com/matteocrippa/swiftRemoteLogger.git", :tag => s.version.to_s }
+s.platform     = :ios, "8.0"
 
-  s.platform     = :ios, '8.0'
-  s.requires_arc = true
+s.frameworks = "Foundation", "UIKit"
 
+s.source_files  = 'Pod/Classes/*'
 
-s.source_files = 'Pod/Classes/*.swift'
-
-
-s.ios.deployment_target = '8.0'
-
+s.requires_arc = true
 s.dependency 'Alamofire', '~> 1.3'
-
-
 end
