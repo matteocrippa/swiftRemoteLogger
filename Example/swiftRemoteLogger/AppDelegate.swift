@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import swiftRemoteLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        swiftRemoteLogger_endPoint = "http://localhost/logger.php"
+        swiftRemoteLogger.endPoint = "http://localhost/logger.php"
         
-        swiftRemoteLogger.sLog("hello")
+        swiftRemoteLogger.log("test")
 
         
         // Override point for customization after application launch.
