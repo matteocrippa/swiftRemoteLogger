@@ -34,7 +34,7 @@ s.source_files = 'Pod/Classes/*.swift'
 
 s.ios.deployment_target = '8.0'
 
-s.dependency 'Alamofire', '2.0.0'
+s.dependency 'Alamofire', '~> 1.3'
 
 
 end
