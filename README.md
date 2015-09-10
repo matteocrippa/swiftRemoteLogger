@@ -20,6 +20,8 @@ it, simply add the following line to your Podfile:
 pod "swiftRemoteLogger"
 ```
 
+You also need [swiftRemoteLoggerPhp](https://github.com/matteocrippa/swiftRemoteLoggerPhp) script to manage to use this.
+
 ## Author
 
 Matteo Crippa, github@matteocrippa.it
