@@ -22,6 +22,20 @@ pod "swiftRemoteLogger"
 
 You also need [swiftRemoteLoggerPhp](https://github.com/matteocrippa/swiftRemoteLoggerPhp) script to manage to use this.
 
+ Usage
+ 
+```
+ import swiftRemoteLogger
+```
+
+and then
+
+```
+// setup logger endpoint
+swiftRemoteLogger.endPoint = "http://localhost/logger.php"
+// log something
+swiftRemoteLogger.l("test")
+```
 ## Author
 
 Matteo Crippa, github@matteocrippa.it
