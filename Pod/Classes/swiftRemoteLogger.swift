@@ -34,7 +34,7 @@ public class swiftRemoteLogger {
                 "udid": UIDevice.currentDevice().identifierForVendor.UUIDString,
                 "app": "\(NSBundle.mainBundle().bundleIdentifier!)",
                 "password": "password"
-            ]).responseJSON { _, _, JSON, _ in
+            ]).responseJSON { _, _, success in
                 //println(JSON)
         }
         
