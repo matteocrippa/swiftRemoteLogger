@@ -26,5 +26,5 @@ s.frameworks = "Foundation", "UIKit"
 s.source_files  = 'Pod/Classes/*'
 
 s.requires_arc = true
-s.dependency 'Alamofire', '~> 1.3'
+s.dependency 'Alamofire', '~> 2.0'
 end
